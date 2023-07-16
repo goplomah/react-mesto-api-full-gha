@@ -18,7 +18,8 @@ const createCard = (req, res, next) => {
     .then((card) => {
       card
         .populate('owner')
-        .then(() => res.status(201).send(card)); })
+        .then(() => res.status(201).send(card));
+    })
     .catch((err) => {
       if (err.name === 'ValidationError') {
         return next(new ValidationError('переданы некорректные данные при создании карточки'));

@@ -8,6 +8,7 @@ const { errors } = require('celebrate');
 const cors = require('cors');
 const routes = require('./routes/index');
 const handlerCentralError = require('./middlewares/handlerCentralError');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const { PORT = 3000 } = process.env;
 
@@ -26,7 +27,10 @@ app.use(express.json());
 
 app.use(helmet());
 
+app.use(requestLogger);
 app.use(routes);
+app.use(errorLogger);
+
 app.use(errors());
 app.use(handlerCentralError);
 
