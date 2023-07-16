@@ -1,0 +1,17 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 320px;
+    max-width: 1280px;
+    font-family: "Inter", "Arial", sans-serif;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

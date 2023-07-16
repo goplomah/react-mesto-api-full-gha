@@ -1,0 +1,7 @@
+.menu__line {
+    height: 3px;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    transition: all .7s;
+}

@@ -1,0 +1,11 @@
+.form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 616px) {
+  .form {
+    margin: 75px 0 0;
+  }
+}

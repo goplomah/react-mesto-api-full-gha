@@ -1,0 +1,16 @@
+.places__button-trash {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent url(../../../images/places__button-trash.svg);
+    border: none;
+    cursor: pointer;
+    transition: .5s linear;
+    width: 18px;
+    height: 19px;
+}
+  
+  .places__button-trash:hover {
+    opacity: .6;
+    box-shadow: 0 0 15px #bb2702;
+  }

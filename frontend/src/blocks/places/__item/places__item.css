@@ -1,0 +1,11 @@
+.places__item {
+  position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.5s linear;
+  }
+  
+   .places__item:hover {
+    box-shadow: 3px 3px 5px #2f80ed;
+    opacity: 0.9;
+   } 

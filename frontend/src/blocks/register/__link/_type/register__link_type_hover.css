@@ -1,0 +1,7 @@
+.register__link_type_hover {
+    transition: .5s linear;
+}
+
+.register__link_type_hover:hover {
+    opacity: .5;
+}

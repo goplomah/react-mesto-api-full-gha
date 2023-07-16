@@ -1,0 +1,8 @@
+.hover_type_dark {
+    transition: .5s linear;
+}
+
+.hover_type_dark:hover {
+    opacity: .5;
+    background-color: #a9a9a9;
+}

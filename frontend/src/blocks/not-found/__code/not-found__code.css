@@ -1,0 +1,18 @@
+.not-found__code {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: 12px;
+    -webkit-box-reflect: below -50px linear-gradient(transparent, #000);
+    animation: animate 5s linear infinite;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-right: 16px;
+    font-weight: 600;
+}

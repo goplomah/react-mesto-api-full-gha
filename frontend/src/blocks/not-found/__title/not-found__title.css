@@ -1,0 +1,11 @@
+.not-found__title {
+    margin: 70px 0 0;
+    font-size: 26px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.not-found__title:hover + .not-found__text {
+    color: #fff;
+    transition: 1s linear;
+}

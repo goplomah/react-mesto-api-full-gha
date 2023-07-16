@@ -1,0 +1,7 @@
+.not-found__text {
+    color: #000;
+    margin: 30px 0 0;
+    text-align: center;
+    transition: 1s linear;
+    padding: 0 15px;
+}

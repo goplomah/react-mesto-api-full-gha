@@ -1,0 +1,15 @@
+.profile__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 943px) {
+    .profile__wrapper {
+      flex-direction: column;
+    }
+  }
+  
+  .profile__wrapper:hover .profile__avatar {
+    filter: drop-shadow(4px 4px 10px #2f80ed);
+    transform: scale(1.1);
+  }

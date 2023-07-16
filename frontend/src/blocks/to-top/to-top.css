@@ -1,0 +1,28 @@
+.to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    background-image: url(../../images/to-top2.svg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 5px solid #000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+    z-index: 5;
+    transform: translateY(100px);
+}
+
+@media (max-width: 500px) {
+    .to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+

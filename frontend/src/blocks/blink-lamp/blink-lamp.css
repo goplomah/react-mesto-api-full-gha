@@ -1,0 +1,10 @@
+.blink-lamp {
+    background-image: url(../../images/bulb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: calc(300 / 550 * 100%);
+    width: 100%;
+    height: 0;
+    display: flex;
+    position: relative;
+}

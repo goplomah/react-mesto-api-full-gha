@@ -1,0 +1,22 @@
+.menu {
+    width: 24px;
+    height: 18px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    display: none;
+    transition: .7s linear;
+}
+
+.menu:hover {
+    opacity: .5;
+}
+
+@media (max-width: 760px) {
+    .menu {
+        display: flex;
+    }
+}

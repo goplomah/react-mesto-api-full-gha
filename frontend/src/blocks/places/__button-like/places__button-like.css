@@ -1,0 +1,15 @@
+.places__button-like {
+    width: 22px;
+    height: 19px;
+    transition: 0.5s linear;
+    cursor: pointer;
+    border: none;
+    background: transparent url(../../../images/places__button-like.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .places__button-like:hover {
+    opacity: 0.5;
+    scale: 1.1;
+  }

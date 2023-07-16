@@ -1,0 +1,15 @@
+.header_show {
+    padding-top: 180px;
+}
+
+@media (min-width: 761px) {
+    .header_show {
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 617px) {
+    .header_show {
+        padding-top: 170px;
+    }
+}
