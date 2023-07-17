@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 130.193.55.137
+IP 130.193.55.137
 
 Frontend https://goplomah.nomoredomains.xyz
 
