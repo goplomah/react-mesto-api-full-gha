@@ -48,7 +48,12 @@ function Header({ email, onExit }) {
             <>
               <nav className={`header__nav ${isShow && "header__nav_show"}`}>
                 <p className="header__email">{email}</p>
-                <Link className="header__link" to="/sign-in" onClick={onExit}>
+                <Link className="header__link" to="/sign-in" onClick={() => {
+                  // eslint-disable-next-line no-unused-expressions
+                  onExit();
+                  setIsShow(!isShow);
+                }
+                }>
                   Выход
                 </Link>
               </nav>
