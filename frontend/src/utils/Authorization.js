@@ -3,12 +3,6 @@ class Authorization {
     this._dataBase = dataBase;
   }
 
-  // _request(endpoint, option) {
-  //   return fetch(`${this._dataBase + endpoint}`, option).then((res) =>
-  //     this._checkResponse(res)
-  //   );
-  // }
-
   _request(endpoint, option) {
     return fetch(`${this._dataBase + endpoint}`, option).then((res) =>
       this._checkResponse(res)
@@ -57,6 +51,6 @@ class Authorization {
 }
 
 const authorization = new Authorization({
-  dataBase: "http://localhost:3000/",
+  dataBase: "https://api.goplomah.nomoredomains.xyz/",
 });
 export default authorization;

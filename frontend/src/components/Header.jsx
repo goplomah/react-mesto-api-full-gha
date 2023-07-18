@@ -12,7 +12,7 @@ function Header({ email, onExit }) {
   return (
     <header className={`header ${isShow && "header_show"}`}>
       <a
-        href="https://goplomah.github.io/react-mesto-auth/"
+        href="/"
         className="header__link"
       >
         <img src={logo} alt="логотип сайта место." className="header__logo" />

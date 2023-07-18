@@ -1,7 +1,6 @@
 export class Api {
   constructor(data) {
     this._dataBase = data.dataBase;
-    // this._headers = data.headers;
   }
 
   _request(endpoint, option) {
@@ -116,11 +115,7 @@ export class Api {
 }
 
 const api = new Api({
-  dataBase: "http://localhost:3000/",
-  // headers: {
-  //   authorization: `Bearer ${token}`,
-  //   "Content-Type": "application/json",
-  // },
+  dataBase: "https://api.goplomah.nomoredomains.xyz/",
 });
 
 export default api;
