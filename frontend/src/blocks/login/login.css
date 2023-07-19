@@ -6,3 +6,10 @@
     flex-grow: 1;
     box-sizing: border-box;
 }
+
+@media (max-width: 400px) {
+    .login {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
