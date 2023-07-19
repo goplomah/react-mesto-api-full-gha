@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 const Card = require('../models/card');
 const ValidationError = require('../errors/ValidationError');
 const ForbiddenError = require('../errors/ForbiddenError');
@@ -32,7 +31,6 @@ const deleteCard = (req, res, next) => {
   const cardById = req.params._id;
   const userById = req.user._id;
   Card.findById(cardById)
-    // .populate(['owner', 'likes'])
     .then((card) => {
       if (!card) {
         return next(new NotFoundError('карточка с указанным id не найдена'));
@@ -40,16 +38,16 @@ const deleteCard = (req, res, next) => {
       if (card.owner.toString() !== userById) {
         return next(new ForbiddenError('У вас нет прав на удаление чужой карточки'));
       }
-      Card.deleteOne(card)
+      return Card.deleteOne(card)
         .then(() => res.send({ data: card }))
-        .catch((err) => {
-          if (err.name === 'CastError') {
-            return next(new ValidationError('передан несуществующий _id карточки'));
-          }
-          return next(err);
-        });
+        .catch(next);
     })
-    .catch(next);
+    .catch((err) => {
+      if (err.name === 'CastError') {
+        return next(new ValidationError('передан несуществующий _id карточки'));
+      }
+      return next(err);
+    });
 };
 
 const likeCard = (req, res, next) => {
@@ -59,7 +57,7 @@ const likeCard = (req, res, next) => {
     .populate(['owner', 'likes'])
     .then((card) => {
       if (card) {
-        return res.status(201).send(card);
+        return res.status(200).send(card);
       }
       return next(new NotFoundError('передан несуществующий _id карточки'));
     })

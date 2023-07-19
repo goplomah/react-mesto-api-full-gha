@@ -1,6 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 const bcrypt = require('bcryptjs');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const NotFoundError = require('../errors/NotFoundError');
@@ -100,12 +98,11 @@ const login = (req, res, next) => {
 
 const getInfoCurrentUser = (req, res, next) => {
   User.findById(req.user._id)
-    // eslint-disable-next-line consistent-return
     .then((user) => {
       if (!user) {
         return next(new NotFoundError('пользователь не найден'));
       }
-      res.send(user);
+      return res.send(user);
     })
     .catch(next);
 };

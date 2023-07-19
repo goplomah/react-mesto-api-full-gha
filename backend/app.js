@@ -1,11 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const helmet = require('helmet');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const { errors } = require('celebrate');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const cors = require('cors');
 const routes = require('./routes/index');
 const handlerCentralError = require('./middlewares/handlerCentralError');

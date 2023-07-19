@@ -1,5 +1,5 @@
 const router = require('express').Router();
-// eslint-disable-next-line import/no-extraneous-dependencies
+
 const {
   getUsers, getUserById, updateProfile, updateAvatar, getInfoCurrentUser,
 } = require('../controllers/users');

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-// eslint-disable-next-line import/no-extraneous-dependencies
+
 const {
   getCards, createCard, deleteCard, likeCard, dislikeCard,
 } = require('../controllers/card');
